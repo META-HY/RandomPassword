@@ -1,1 +1,1 @@
-# futsu.github.io
+# 随机密码生成器
