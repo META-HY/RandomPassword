@@ -150,3 +150,16 @@ function generatePassword(length, lower, upper, number, symbol) {
 	}
 	return generatedPassword.slice(0, length);
 }
+
+window.onload = function(){
+  var winHeight = 0;
+  if (window.innerHeight){
+    winHeight = window.innerHeight;
+  }else if ((document.body) && (document.body.clientHeight)){
+    winHeight = document.body.clientHeight;
+  }
+  var html = document.getElementsByTagName('html')[0];
+  if(document.body.offsetHeight < windowHeight){
+      html.style.height = windowHeight;
+  }
+};
